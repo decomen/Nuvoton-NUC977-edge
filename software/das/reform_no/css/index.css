@@ -1,0 +1,74 @@
+.text_left{text-align:left}
+.text_right{text-align:right}
+.text_center{text-align:center}
+.input_100_center{height:25px;width:100px;text-align:center!important}
+.input_200{height:25px;width:200px}
+.table_96{width:96%}
+.table_90{width:90%}
+.td_85_left{width:85%;text-align:left}
+.back_8fc6{background-color:#f2f2f2}
+.width_50{width:50px}
+.width_350{width:350px}
+.width_45{width:45px}
+.width_100{width:100px}
+.width_200{width:200px}
+.width_500{width:500px}
+.width_80{width:80px}
+.width_60{width:60px}
+.height_25{height:25px}
+.height_50{height:50px}
+.height_75{height:75px}
+.height_100{height:100px}
+.height_125{height:125px}
+.x-large{text-align:left;background-color:#8fc6fc;font-size:x-large;height:50px}
+.right_8fc6{text-align:right;/*background-color:#f2f2f2*/}
+.h25_w90{height:25px!important;width:90px!important}
+.h25_w300{height:25px!important;width:300px!important}
+.h25_w350{height:25px!important;width:350px!important}
+.h25_w400{height:25px!important;width:400px!important}
+.w45_left{width:45px;text-align:left!important}
+.h25_w60{height:25px;width:60px}
+.w36_left{width:36px;text-align:left!important}
+.float_left{float:left}
+.f_left_m_20{float:left;margin-left:20px}
+.d_none{display:none}
+.h25_w90{height:25px!important;width:90%!important}
+.h25_w10{height:25px!important;width:10%!important}
+.h25_w100{height:25px!important;width:100%!important}
+table select.h25_w100{width: 95%!important;}
+.h25_w60{height:25px!important;width:60px!important}
+.h400_ov{height:300px;overflow:auto}
+.w_960{width:960px}
+.tu1{background-image:url(../images/xiaotubiao_03.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu2{background-image:url(../images/xiaotubiao_07.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu3{background-image:url(../images/xiaotubiao_11.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu4{background-image:url(../images/xiaotubiao_15.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu5{background-image:url(../images/xiaotubiao_19.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu6{background-image:url(../images/xiaotubiao_22.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu7{background-image:url(../images/xiaotubiao_25.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu8{background-image:url(../images/xiaotubiao_28.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu9{background-image:url(../images/xiaotubiao_32.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu10{background-image:url(../images/xiaotubiao_35.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu11{background-image:url(../images/xiaotubiao_39.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu12{background-image:url(../images/tu_14.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu16{background-image:url(../images/tu_14.png);background-repeat:no-repeat;background-position:15px 12px}
+.check_01 input{margin-top:10px}
+.t_30{width:30%}
+.t_10{width:10%}
+.b_s{height:25px!important;width:60px!important}
+.select_in{margin-left:30px;width:100px}
+.select_in.w320{width: 320px;}
+.download{margin-left:30px;width:66px;border:0;border:1px solid #ccc;cursor:pointer}
+.tu13{background-image:url(../images/xiaotubiao_11.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu14{background-image:url(../images/xiaotubiao_35.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu15{background-image:url(../images/guanyu.png);background-repeat:no-repeat;background-position:15px 12px}
+.tu77{background-image:url(../images/xiaotubiao_35.png);background-repeat:no-repeat;background-position:15px 12px}
+.table-head{padding-right:17px;background-color:#f2f2f2;color:#000;}
+.table-head thead tr th{border: 1px solid #ccc;height:30px;word-break:break-all;background: #ffffff;}
+.table-body{width:100%;height:500px;overflow-y:scroll}
+.table-body-small{width:100%;height:300px;overflow-y:scroll}
+.table-head table{width:100%}
+.table-body table{width:100%}
+.table-body tr td{height:25px;word-break:break-all;}
+.clearfix:after{content: "\0020"; display: block; height: 0;clear: both; visibility: hidden; }
+.clearfix{zoom: 1;}

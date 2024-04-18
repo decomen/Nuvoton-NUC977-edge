@@ -1,0 +1,50 @@
+﻿@charset "utf-8";body,html{margin:0;padding:0;width:100%}
+body{background-position:center top;background-color:#21333e;font-size:12px;font-family:"微软雅黑"}
+.name,.pwd,dd,form,h1,h2,h3,input,p,select,textarea,ul{margin:0;padding:0;border:0;font-family:"微软雅黑";line-height:150%}
+li,ul{list-style:none}
+div,p{word-wrap:break-word}
+img{border:0}
+button,input,select,textarea{outline:0}
+@font-face{font-family:myFont;src:url(../fonts/方正正准黑简体.ttf)}
+.logo_01{width:135px;height:135px;margin:0 auto;margin-top:150px}
+.logo_02{height:26px;margin-top:42px;color:#ffffff;font-size:24px;text-align:center}
+.logo_01 img{width:135px;height:135px}
+.logo_02 img{width:277px;height:26px}
+#Logo{width:514px;height:260px;margin:60px auto;margin-bottom:0}
+#Logo .text{padding:100px 0 0 140px}
+#Logo .text span{color:#fff;font-size:20px;font-family:myFont;font-weight:650}
+#Logo .form{width:480px;height:186px;margin:20px 8px 8px 8px;background-color:#fff;padding:20px;border-radius:10px}
+#Logo .form .form_box{width:466px;height:122px;background-color:#FFF;padding:13px 0 0 32px}
+#Logo .form .form_box p{width:442px;height:34px;line-height:34px;border-bottom:1px solid #ccc;padding-bottom: 3px;}
+#Logo .form .form_box p img{margin:0 13px -2px 0}
+#Logo .form .form_box p input{width:410px;height:30px}
+#Logo .form .form_box p.che{height:50px;line-height:50px;border-bottom:0;color:#666}
+#Logo .form .form_box p.che input{width:15px;height:14px;margin-bottom:-2px}
+#Logo .form .form_submit{height:41px;margin:10px auto;padding-left:32px;border-radius:6px}
+#Logo .form .form_submit a{display: block;
+	height: 41px;
+	width: 442px;
+	background: #323d48;
+	border-radius: 5px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 41px;
+}
+#Logo .form .reg_submit{height:41px;margin:10px auto;padding-left:21px;border-radius:6px}
+#Logo .form .reg_submit a{display: block;height: 41px;
+	width: 442px;
+	background: #323d48;
+	border-radius: 5px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 41px;}
+.footbox{width:600px;line-height:24px;font-size:14px;margin:0 auto;color:#000;text-align:center;float:left}
+.footbox a,span {
+	height: 40px;
+	text-align: center;
+	color: #ffffff
+}

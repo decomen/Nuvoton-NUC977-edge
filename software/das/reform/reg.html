@@ -1,0 +1,124 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>激活界面</title>
+<meta name="keywords" content="激活，注册"/>
+<meta name="description" content=""/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="js/jquip.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$.ajax({ 
+			url: "/cgi-bin/reggetid", 
+			async: true,
+			dataType: 'json', 
+			success: function(data){
+				if(data.ret==0){
+					window.document.getElementById("regid").value = data.id;
+					if( data.reg == 1 ) {
+						window.document.getElementById("regstatus").innerHTML = "激活状态：已激活";
+						window.document.getElementById("regkey").value = data.key;
+					} else {
+						var t = data.tta-data.ttt;
+						if( t > 0 ) {
+							var d = parseInt(t/(24*60*60));
+							t-=(24*60*60*d);
+							var h = parseInt(t/(60*60));
+							t-=60*60*h;
+							var m = parseInt(t/60);
+							window.document.getElementById("regstatus").innerHTML = "激活状态：试用剩余时间 " + d + "天" + h + "时" + m + "分";
+						} else {
+							window.document.getElementById("regstatus").innerHTML = "激活状态：试用结束，请激活！";
+						}
+					}
+				} else {
+					alert("获取激活信息失败，请刷新重试！");
+				}
+			},
+			timeout: 5000,
+			error: function( ){
+				alert( "获取激活信息异常,请重试!" );
+			}
+		});
+	});
+
+	function regkey()
+	{
+		var regkey = window.document.getElementById("regkey").value;
+		if (regkey == "")
+		{
+			alert("请输入注册码！");
+		}
+		else
+		{
+			$.ajax({ 
+			url: "/cgi-bin/doreg?"+"key="+regkey + "&__time="+Date.parse( new Date()),  
+			async: true,
+			dataType: 'json', 
+			success: function(data){
+				if(data.ret==0){
+					alert("激活成功！");
+					self.location = 'index.html';
+				} else {
+					alert("激活失败，请检测激活码再重试！");
+				}
+			},
+			timeout: 5000,
+			error: function( ){
+				alert( "激活异常,请重试!" );
+			}
+			});
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="logo_02">
+			激活界面
+	</div>
+	<div id="Logo">
+		<form class="form" name="form1" method="post" action="" style="height:320px;">
+			<div class="form_box" style="height:242px;padding:13px 0 0 20px">
+				<div id="regstatus">激活状态：---</div>
+				<span>本机序列号:</span>
+				<p><textarea id="regid" readonly="true" style="resize:none;width:100%;height:60px;border:solid 1px #aaaaaa;"></textarea></p>
+				<br/><br/><br/>
+				<span>激活码:</span>
+				<p><textarea onkeydown='if(event.keyCode==13){reg.click();return false;}'  id="regkey" style="resize:none;width:100%;height:80px;border:solid 1px #aaaaaa;" placeholder="这里写激活码"></textarea></p>
+			</div>
+			<div class="reg_submit">
+				<a href="#" id="reg" onclick="regkey();">激活</a>
+			</div>
+		</form>
+		<div class="footbox">
+			<span>Copyright © 2016-2019 </span><a target="_blank" href="http://www.decomen.cn">蒂蒙技术</a><span> All rights reserved.</span>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

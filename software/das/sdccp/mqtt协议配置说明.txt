@@ -1,0 +1,74 @@
+;默认配置
+[common]
+; 用户名
+username=
+
+; 访问密码
+password=
+
+; client_id以以下优先级进行使用
+; 优先级：client_id > 4G路由器设备SN
+client_id=0123456780
+
+; 订阅的主题名称(可用于做一些控制)
+topic_sub=dm_a401f/test_sub
+
+; 发布数据的主题名称
+topic_pub=dm_a401f/test_pub
+
+;不配置JSON格式默认使用蒂蒙的上传格式
+;MQTT发布JSON格式配置,中益明光的上传格式
+sdccp_format=zy 
+
+;数采仪接入的PLC个数，最多不能超过10个
+plc_num=2
+
+;plc0的仪表ID，字符串类型，即上传配置的nid
+plc0_name=001
+;plc0的挂载通道，表示PLC接在以太网的第几组，从0开始
+plc0_chan=0
+;plc0的反控的寄存器地址
+plc0_reg=0
+
+;plc1的仪表ID，字符串类型，即上传配置的nid
+plc1_name=002
+;plc1的挂载通道，表示PLC接在以太网的第几组，从0开始
+plc1_chan=2
+;plc1的反控的寄存器地址
+plc1_reg=1
+
+; MQTT keepalive 间隔(秒)
+keepalive=60
+
+; MQTT QOS 
+qos=0
+
+; MQTT retained
+retained=0
+
+; 实时数据上传开关 0 关, 1开
+real_flag=1
+; 实时数据间隔(毫秒)
+real_interval=10000
+
+; 分钟数据上传开关 0 关, 1开
+min_flag=0
+
+; 5分钟数据上传开关 0 关, 1开
+min_5_flag=0
+
+; 小时数据上传开关 0 关, 1开
+hour_flag=0
+
+; 整点上传开关 0 关, 1开
+sharp_flag=1
+
+;关掉一些不需要的数据
+;是否发送累计值 1 表示不发
+no_cou=1
+;是否发送最小值 1 表示不发
+no_min=1
+;是否发送最大值 1 表示不发
+no_max=1
+;是否发送平均值 1 表示不发
+no_avg=0
